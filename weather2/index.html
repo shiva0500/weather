@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <title>weather</title>
+</head>
+<body>
+    
+    <div class="card">
+        <div class="search">
+            <input id="search_input" type="text" placeholder="Enter city name..." spellcheck="false" >
+            <button id="search_button" ><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="error">
+            <h1>INVALID CITY</h1>
+        </div>
+        <div class="disclose">
+        <div class="weather">
+            <img src="./assests/clear.png" class="weather__img" alt="weather_img">
+            <h1 class="city" >KOCHI</h1>
+            <h2 class="temp" >27°C</h2>
+        </div>
+        <div class="weather_forecast">
+            <div class="weather__card">
+                <i class="fa-solid fa-temperature-full"></i>
+                <div>
+                    <p>Real Feel</p>
+                    <p class="realfeel">20&#176</p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Humidity</p>
+                    <p class="humidity">60%</p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Wind</p>
+                    <p class="wind">40km/hr</p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div>
+                    <p>Pressure</p>
+                    <p class="pressure">1000psi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script
+    src="https://kit.fontawesome.com/9334a078b5.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

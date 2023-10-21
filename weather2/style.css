@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #252424;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 500px;
+  min-width: auto;
+  max-width: auto;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search input[type="text"] {
+  overflow: hidden;
+  min-width: auto;
+  padding: 10px;
+  outline: none;
+  background: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  max-width: max-content;
+}
+
+input::placeholder {
+  color: rgb(80, 79, 79);
+  font-size: 1rem;
+}
+
+.search button {
+  cursor: pointer;
+  background-color: #fff;
+  width: 60px;
+  height: 40px;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 0px 15px 15px 0px;
+}
+
+
+
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.weather img {
+  width: 200px;
+}
+
+.weather h1 {
+  font-size: 2.5rem;
+}
+.weather h2 {
+  font-size: 2rem;
+}
+
+.weather_forecast {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 1rem;
+}
+
+.weather__card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(233, 231, 231);
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.weather__card i {
+  font-size: 1.5rem;
+}
+
+.disclose {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .card{
+    width: 300px;
+    
+  }
+
+  .search input[type="text"] {
+    max-width: 80%;
+  }
+
+  .weather{
+    margin-bottom: 1.5rem;
+  }
+
+  .weather img {
+    width: 150px;
+  
+  }
+  
+  .weather h1 {
+    font-size: 2rem;
+  }
+  .weather h2 {
+    font-size: 1.5rem;
+  }
+  .weather_forecast {
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    grid-gap: 0.6rem;
+    justify-content: center;
+  }
+  
+  .weather__card {
+    gap: 0.5rem;
+    padding: 10px;
+  }
+  
+  .weather__card i {
+    font-size: 1.3rem;
+  }
+
+}
